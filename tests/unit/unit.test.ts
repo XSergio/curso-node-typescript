@@ -16,7 +16,7 @@ describe('Testes Unitários do Controller', () => {
             return user.create(novoUsuario)
                     .then(data => {
                         expect(data.dataValues).to.have.all.keys(
-                            ['email', 'id', 'name', 'password', 'updateAt', 'createdAt']
+                            ['email', 'id', 'name', 'password', 'updatedAt', 'createdAt']
                         )
                     })
        });

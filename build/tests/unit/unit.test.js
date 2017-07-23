@@ -14,7 +14,7 @@ describe('Testes Unitários do Controller', function () {
             var user = new service_1.default();
             return user.create(novoUsuario)
                 .then(function (data) {
-                helpers_1.expect(data.dataValues).to.have.all.keys(['email', 'id', 'name', 'password', 'updateAt', 'createdAt']);
+                helpers_1.expect(data.dataValues).to.have.all.keys(['email', 'id', 'name', 'password', 'updatedAt', 'createdAt']);
             });
         });
     });
